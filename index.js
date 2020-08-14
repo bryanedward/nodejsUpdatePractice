@@ -13,7 +13,7 @@ async function main() {
                 useUnifiedTopology: true
             }).then(() => {
                 app.listen(process.env.PORT)
-                console.log(chalk.bold.blue('connect!'))
+                console.log(chalk.bold.blue(`connect to ${process.env.PORT} !!`))
             })
     } catch (error) {
         console.log(chalk.bold.red(error));
