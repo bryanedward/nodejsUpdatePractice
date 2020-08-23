@@ -6,7 +6,7 @@ const config = require('./config')
 async function main() {
     // connect to database
     try {
-        await mongoose.connect(config.MONGOOSE,
+        await mongoose.connect(config.MONGODB_URI,
             {
                 useNewUrlParser: true,
                 useUnifiedTopology: true

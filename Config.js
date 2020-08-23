@@ -9,5 +9,5 @@ module.exports = {
     NODE_ENV: process.env.NODE_ENV || 'development',
     HOST: process.env.HOST || '127.0.0.1',
     PORT: process.env.PORT || 7000,
-    MONGOOSE: process.env.MONGOOSE ||'mongodb://localhost:27017/updatedb'
+    MONGODB_URI: process.env.MONGODB_URI ||'mongodb://localhost:27017/updatedb'
 }
