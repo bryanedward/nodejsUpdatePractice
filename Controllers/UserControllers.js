@@ -6,6 +6,9 @@ var userControllers = {
         res.status(200).send(
             query
         )
+    },
+    view: function (req, res) {
+        res.send('hola mundo')
     }
 }
 
