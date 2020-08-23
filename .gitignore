@@ -1,4 +1,4 @@
-.env
+development.env
 Models
 .vscode
 package.json

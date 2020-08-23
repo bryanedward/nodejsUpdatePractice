@@ -1,19 +1,18 @@
 const chalk = require('chalk');
 const mongoose = require('mongoose')
-const dotenv = require('dotenv')
 const app = require('./App')
-dotenv.config();
+const config = require('./config')
 
 async function main() {
     // connect to database
     try {
-        await mongoose.connect(process.env.MONGOOSE,
+        await mongoose.connect(config.MONGOOSE,
             {
                 useNewUrlParser: true,
                 useUnifiedTopology: true
             }).then(() => {
-                app.listen(process.env.PORT)
-                console.log(chalk.bold.blue(`connect to ${process.env.PORT} !!`))
+                app.listen(config.PORT)
+                console.log(chalk.bold.blue(`connect to ${config.PORT} !!`))
             })
     } catch (error) {
         console.log(chalk.bold.red(error));
@@ -21,3 +20,6 @@ async function main() {
 }
 
 main()
+
+
+
