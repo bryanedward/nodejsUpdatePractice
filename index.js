@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const mongoose = require('mongoose')
 const app = require('./App')
-const config = require('./config')
+const config = require('./Config')
 
 async function main() {
     // connect to database
