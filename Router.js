@@ -3,7 +3,7 @@ var userControllers = require('./Controllers/UserControllers')
 var router = Router();
 
 router.get('/', userControllers.home)
-router.get('/vista', userControllers.view)
+router.post('/cliente', userControllers.saveclient)
 
 module.exports  = router
 
