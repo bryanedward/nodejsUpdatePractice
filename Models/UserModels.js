@@ -1,11 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-// el molde 
+
 var projectSchema = Schema({
     nombre: String,
     direccion: String,
     email: String,
+    tipoPago:String,
     saldo: Number
 });
 
